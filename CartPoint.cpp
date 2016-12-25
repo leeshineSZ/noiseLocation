@@ -48,11 +48,11 @@ double CartPoint::get_z(){
 }
 
 void CartPoint::printCart(){
-	//todo: implement..
+	//todo: roi
 }
 
 void CartPoint::printGeo(){
-	//todo: implement..
+	//todo: roi
 }
 
 double CartPoint::distance(CartPoint other){
