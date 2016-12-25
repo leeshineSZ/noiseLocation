@@ -6,16 +6,19 @@
 CPP_SRCS += \
 ../CartPoint.cpp \
 ../GeoPoint.cpp \
+../noiseLocation.cpp \
 ../test.cpp 
 
 OBJS += \
 ./CartPoint.o \
 ./GeoPoint.o \
+./noiseLocation.o \
 ./test.o 
 
 CPP_DEPS += \
 ./CartPoint.d \
 ./GeoPoint.d \
+./noiseLocation.d \
 ./test.d 
 
 

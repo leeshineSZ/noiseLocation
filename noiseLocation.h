@@ -10,12 +10,12 @@
 
 #include "GeoPoint.h"
 
-struct SensorRow{
+typedef struct SensorRow{
 	CartPoint snsrLocation;
 	double Delta;
-};
+} sensorRow;
 
-SensorRow createTableFromFile(char* fileName);
+SensorRow* createTableFromFile(const char* fileName, int* size);
 
 double ErrorAsesmnt(SensorRow real, CartPoint p);
 

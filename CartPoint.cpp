@@ -8,6 +8,7 @@
 
 #include "CartPoint.h"
 #include <cmath>
+#include <stdio.h>
 
 /*
  * Contractor
@@ -48,11 +49,11 @@ double CartPoint::get_z(){
 }
 
 void CartPoint::printCart(){
-	//todo: roi
+	printf("(CartPoint: x:%f y:%f z:%f)\n",_x, _y, _z);
 }
 
 void CartPoint::printGeo(){
-	//todo: roi
+	printf("(CartPoint: lat:%f lon:%f alt:%f)\n",get_lat(), get_lon(), get_alt());
 }
 
 double CartPoint::distance(CartPoint other){
