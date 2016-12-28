@@ -17,9 +17,13 @@ typedef struct SensorRow{
 
 SensorRow* createTableFromFile(const char* fileName, int* size);
 
-double ErrorAsesmnt(SensorRow real, CartPoint p);
+double ErrorAsesmnt(SensorRow* real, CartPoint p);
 
-CartPoint findSource(SensorRow*, short size, unsigned grid_gap);
+
+/*
+ * TODO: create copy constructor!!! using pointer here is worng and can be buggy;
+ */
+CartPoint * findSource(SensorRow * table, short sat_num, short grid_size, unsigned grid_gap);
 
 
 
